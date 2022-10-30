@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Friend Finder 2022</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1 class="form-head">Friend Finder</h1>
+		<p class="form-head">Enter your details below and the system will match you with someone who would make a compatible friend based on the information you provide.</p>
+
+		<form>
+			<fieldset class="one">
+				<label for="name">Name or Nickname <input type="text" id="name" name="name" placeholder="JC or James Cross" required></label>
+				<label for="email-address">Email Address <input type="email" id="email" name="email" placeholder="jamescross@gmail.com" required></label>
+				<label for="age">Your Age <input type="number" id="age" name="age" min="18" max="120" placeholder="18" required></label>
+				<label for="personality-type">Personality Type. Don't know your type, click <a>here</a>.
+					<select id="personality-type" name="personality-type">
+						<option value="1">ISTJ</option>
+						<option value="2">ISTP</option>
+						<option value="3">ISFJ</option>
+						<option value="4">ISFP</option>
+						<option value="5">ESTJ</option>
+						<option value="6">ESTP</option>
+						<option value="7">ESFJ</option>
+						<option value="8">ESFP</option>
+						<option value="9">INTJ</option>
+						<option value="10">INTP</option>
+						<option value="11">INFJ</option>
+						<option value="12">INFP</option>
+						<option value="13">ENTJ</option>
+						<option value="14">ENTP</option>
+						<option value="15">ENFJ</option>
+						<option value="16">ENFP</option>
+					</select>
+				</label>
+			</fieldset>
+			<fieldset class="two">
+				<p>Gender</p>
+				<label for="male"><input type="radio" id="male" name="gender"> Male</label>
+				<label for="female"><input type="radio" id="female" name="gender"> Female</label>
+				<label for="non-binary"><input type="radio" id="non-binary" name="gender"> Non-binary</label>
+				<p>Select Interests</p>
+				<label for="science-and-technology"><input type="checkbox" id="science-and-technology" name="interests"> Science and Technology</label>
+				<label for="sports-and-athletics"><input type="checkbox" id="sports-and-athletics" name="interests"> Sports and Athletics</label>
+				<label for="music-and-film"><input type="checkbox" id="music-and-film" name="interests"> Music and Film</label>
+				<label for="bio">Provide a bio:
+					<textarea id="bio" name="bio" placeholder="I enjoy hiking and cycling..." rows="3" cols="30"></textarea>
+				</label>
+			</fieldset>
+			<input type="submit" value="Find a Friend" id="submit">
+		</form>
+	</body>
+</html>
